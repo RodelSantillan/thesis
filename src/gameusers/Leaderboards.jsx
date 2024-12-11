@@ -16,7 +16,7 @@ const Leaderboards = () => {
     >
       <div className="bg-yellow-300 p-6 rounded-lg relative max-w-lg w-full border-[#ffffff] shadow-lg shadow-[#ffffff] focus:outline-none focus:ring-2 focus:ring-[#00e5ff ">
         {/* Leaderboard Title */}
-        <LeaderTitleComponent title={"LEADER BOARD"} />
+        <LeaderTitleComponent title={"LEADERBOARDS"} />
 
         {/* Scrollable Container for Entries */}
         <div

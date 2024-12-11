@@ -3,6 +3,7 @@ import background from "../picture/background.png";
 import { FormLayoutComponent } from "./FormLayoutComponent";
 import TitleComponent from "./TitleComponent";
 import ButtonRecovery from "./ButtonRecovery";
+import { Link } from "react-router-dom";
 
 const Recover = () => {
   return (
@@ -17,8 +18,9 @@ const Recover = () => {
     >
       <FormLayoutComponent>
         <div>
-          <TitleComponent title={"RECOVER"} />
+          <TitleComponent title={"Recover"} />
         </div>
+
         <form className="w-full flex flex-col gap-7 items-center font-mono ">
           <input
             type="text"

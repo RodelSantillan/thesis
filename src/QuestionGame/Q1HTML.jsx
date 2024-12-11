@@ -1,5 +1,6 @@
 import React from "react";
 import background from "../picture/background.png";
+import life from "../picture/life.png";
 import LayoutGame from "../gamelevelhtml/LayoutGame";
 import TitleHTML from "../gamelevelhtml/TitleHTML";
 import Questionbutton from "./Questionbutton";
@@ -20,11 +21,19 @@ const Q1HTML = () => {
           <TitleHTML title={"LEVEL 1"} />
         </div>
 
+        <div className="absolute flex justify-center items-center top-5 left-6 gap-2">
+          <div className="">
+            <img src={life} className="w-[50px]" />
+          </div>
+          <div className="">
+            <p className="font-bold text-4xl font-mono ">3</p>
+          </div>
+        </div>
         <div className="flex items-center justify-center flex-col relative space-y-6 font-mono">
           <div className="font-bold text-4xl md:text-5xl">
             <h1>Question</h1>
           </div>
-          <div className="p-5 md:p-10 text-lg md:text-2xl leading-relaxed text-[#414040] ">
+          <div className="p-5 md:p-10 text-lg md:text-2xl leading-relaxed text-[#414040]  ">
             What does HTML stand for?
           </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ButtonComponent = ({ handleSignIn }) => {
   return (
@@ -10,9 +11,12 @@ const ButtonComponent = ({ handleSignIn }) => {
         >
           Enter
         </button>
-        <button className="bg-[#b6b3b3] w-[160px] h-[60px] rounded-full font-bold text-[#084747] border-white border-2 hover:bg-[#f0f0f0]">
-          Cancel
-        </button>
+
+        <Link to="/Signin">
+          <button className="bg-[#b6b3b3] w-[160px] h-[60px] rounded-full font-bold text-[#084747] border-white border-2 hover:bg-[#f0f0f0]">
+            Cancel
+          </button>
+        </Link>
       </div>
     </div>
   );
