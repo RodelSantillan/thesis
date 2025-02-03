@@ -3,14 +3,16 @@ import background from "../picture/background.png";
 import LayoutGame from "../gamelevelhtml/LayoutGame";
 import TitleHTML from "../gamelevelhtml/TitleHTML";
 import Questionbutton from "./Questionbutton";
+
 const Q2HTML = () => {
   const handleInputChange = (e) => {
     const value = e.target.value;
     // Allow only a single character input
-    if (value.length > 1) {
-      e.target.value = value.slice(0, 1); // Restrict to the first character
+    if (value.length > 3) {
+      e.target.value = value.slice(0, 3); // Restrict to the first character
     }
   };
+
   return (
     <div
       className="w-full h-screen relative flex items-center justify-center flex-col"
@@ -27,40 +29,38 @@ const Q2HTML = () => {
         </div>
 
         <div className="flex items-center justify-center flex-col relative space-y-6 font-mono">
-          <div className="font-bold text-4xl md:text-5xl">
-            <h1>Question</h1>
+          <div className="font-bold  text-2xl text-center px-5">
+            <h1>
+              Fill in the missing syntax to create a paragraph about space
+              exploration. Use the &lt;p&gt; tag.
+            </h1>
           </div>
-          <div className="p-5 md:p-10 text-lg md:text-2xl leading-relaxed text-[#414040] ">
-            <div className="flex items-center gap-1">
-              <input
-                onInput={handleInputChange} // Handle input to limit to one character
-                type="text"
-                placeholder=""
-                className="p-3 rounded-full  bg-[#1f1f1f] text-white text-center font-bold  w-[40px] h-[50px]  tracking-wide text-xlborder-2 border-[#ffffff] shadow-lg shadow-[#ffffff] focus:outline-none focus:ring-2 focus:ring-[#00e5ff"
-              />
-              <p>p</p>
 
-              <input
-                onInput={handleInputChange} // Handle input to limit to one character
-                type="text"
-                placeholder=""
-                className="p-3 rounded-full bg-[#1f1f1f] text-white text-center font-bold  w-[40px] h-[50px]  tracking-wide text-xlborder-2 border-[#ffffff] shadow-lg shadow-[#ffffff] focus:outline-none focus:ring-2 focus:ring-[#00e5ff"
-              />
-              <p>This is a paragraph.</p>
-
-              <input
-                onInput={handleInputChange}
-                type="text"
-                placeholder=""
-                className="p-3 rounded-full  bg-[#1f1f1f] text-white text-center font-bold  w-[40px] h-[50px]  tracking-wide text-xlborder-2 border-[#ffffff] shadow-lg shadow-[#ffffff] focus:outline-none focus:ring-2 focus:ring-[#00e5ff"
-              />
-              <p>/p</p>
-              <input
-                onInput={handleInputChange} // Handle input to limit to one character
-                type="text"
-                placeholder=""
-                className="p-3 rounded-full bg-[#1f1f1f] text-white text-center font-bold  w-[40px] h-[50px]  tracking-wide text-xlborder-2 border-[#ffffff] shadow-lg shadow-[#ffffff] focus:outline-none focus:ring-2 focus:ring-[#00e5ff"
-              />
+          <div className="">
+            <div className="text-[#ffffff] bg-[#222] p-5 rounded-md">
+              <p>
+                &lt;html&gt; <br></br>
+                &lt;body&gt;
+                <br></br>
+                <input
+                  type="text"
+                  placeholder=""
+                  className="rounded-sm outline-none w-[30px] text-black"
+                  onChange={handleInputChange} // Add the onChange handler here
+                  maxLength={10} // Ensure only one character can be entered
+                />
+                In the year 2050, humans are ready to embark on a journey to
+                Mars.h{" "}
+                <input
+                  type="text"
+                  placeholder=""
+                  className="rounded-sm outline-none w-[30px] text-black"
+                  onChange={handleInputChange} // Add the onChange handler here
+                  maxLength={10} // Ensure only one character can be entered
+                />
+                <br></br>
+                &lt;/body&gt; <br></br>&lt;/html&gt;
+              </p>
             </div>
           </div>
         </div>

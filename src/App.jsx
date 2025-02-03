@@ -6,6 +6,8 @@ import Home from "./gameusers/Home";
 import Leaderboards from "./gameusers/Leaderboards";
 import Html1 from "./gamelevelhtml/Html1";
 import Q1HTML from "./QuestionGame/Q1HTML";
+import Html2 from "./gamelevelhtml/Html2";
+import Q2HTML from "./QuestionGame/Q2HTML";
 import Signup from "./component/Signup";
 import Recover from "./component/Recover";
 const App = () => {
@@ -20,8 +22,8 @@ const App = () => {
           <Route path="/home" element={<Homegame />} />
           <Route path="/home/start" element={<Home />} />
           <Route path="/leaderboard" element={<Leaderboards />} />
-          <Route path="/introduction" element={<Html1 />} />
-          <Route path="/game" element={<Q1HTML />} />
+          <Route path="/introduction" element={<Html2 />} />
+          <Route path="/game" element={<Q2HTML />} />
         </Routes>
       </BrowserRouter>
     </>
